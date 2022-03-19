@@ -102,10 +102,9 @@ body {
     display: block;
 }
 
-.brrrr {
-    height: 15000px;
-}
-
 #twitch-embed {
-    left: 50%;
+    width: 100%;
+    padding: 75px 0;
+    display: flex;
+    justify-content: center;
 }

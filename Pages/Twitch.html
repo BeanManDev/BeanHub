@@ -2,14 +2,14 @@
 <html>
 
 <head>
-    <title>BeanHub</title>
-    <link rel="icon" href="Media/Images/BeanHub-Icon.png" />
-    <link rel="stylesheet" href="main.css" />
+    <title>BeanHub | Twitch</title>
+    <link rel="icon" href="../Media/Images/BeanHub-Icon.png" />
+    <link rel="stylesheet" href="./twitch.css" />
 </head>
 
 <body>
     <div class="navbar-container">
-        <a class="BHIcon" href="#home"><img src="./Media/Images/BeanHub.png" /></a>
+        <a class="BHIcon" href="../index.html"><img src="../Media/Images/BeanHub.png" /></a>
         <div class="navbar">
             <div class="dropdown">
                 <button class="dropbtn">Websites
@@ -46,11 +46,28 @@
 
 
     <div class="brrrr">
-        
+
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed"></div>
+
+
+
+
+
     </div>
 </body>
 
 <footer>
 </footer>
+<!-- Load the Twitch embed JavaScript file -->
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+<script type="text/javascript">
+    new Twitch.Embed("twitch-embed", {
+        width: 1280,
+        height: 720,
+        channel: "3eanDip"
+    });
+</script>
 
 </html>
